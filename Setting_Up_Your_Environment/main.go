@@ -11,5 +11,6 @@ func main() {
 	// ifElse()
 	// switchFunc()
 	// arrays()
-	slice()
+	// slice()
+	mapsFunc()
 }
