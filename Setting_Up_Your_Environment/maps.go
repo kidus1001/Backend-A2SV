@@ -11,4 +11,9 @@ func mapsFunc() {
 	m["Messi"] = 10
 
 	fmt.Println("Mao:", m)
+	fmt.Println(m["Ma"])
+
+	delete(m, "Cristiano")
+
+	fmt.Println(m)
 }
