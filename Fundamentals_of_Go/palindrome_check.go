@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	s "strings"
 	"unicode"
 )
@@ -34,14 +34,14 @@ func palindromeChecker(word string) bool {
 	return answer
 }
 
-func main() {
-	var strTocheck string
-	fmt.Println("Enter a string: ")
-	fmt.Scan(&strTocheck)
+// func main() {
+// 	var strTocheck string
+// 	fmt.Println("Enter a string: ")
+// 	fmt.Scan(&strTocheck)
 
-	if palindromeChecker(strTocheck) {
-		fmt.Println("The string is palindrome.")
-	} else {
-		fmt.Println("The string is not palindrome.")
-	}
-}
+// 	if palindromeChecker(strTocheck) {
+// 		fmt.Println("The string is palindrome.")
+// 	} else {
+// 		fmt.Println("The string is not palindrome.")
+// 	}
+// }
