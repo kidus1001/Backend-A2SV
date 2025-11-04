@@ -8,6 +8,7 @@ import (
 
 func StartLibraryApp() {
 	library := services.NewLibrary()
+
 	for {
 		fmt.Println("*** Welcome to the library management system! ***")
 		fmt.Println("\n1. To add a new book")
@@ -69,7 +70,11 @@ func StartLibraryApp() {
 			library.ReturnBook(bookID, ID)
 
 		case "5":
-			library.ListAvailableBooks()
+			availableBooks := library.ListAvailableBooks()
+
+			for _, i := range availableBooks {
+				fmt.Println(i.Title)
+			}
 
 		case "6":
 			fmt.Println("Enter the ID of the member: ")

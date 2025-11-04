@@ -30,6 +30,7 @@ type LibraryManager interface {
 func (l *Library) AddBook(book models.Book) {
 	bookId := book.ID
 	if _, exists := l.allBooks[bookId]; !exists {
+		book.Status = "Available"
 		l.allBooks[bookId] = book
 		fmt.Println("Added: ", l.allBooks[book.ID].Title)
 	} else {

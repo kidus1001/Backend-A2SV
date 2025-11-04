@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"os"
+	// "bufio"
+	// "fmt"
+	// "os"
 	"regexp"
 	s "strings"
 )
@@ -26,16 +26,16 @@ func wordFrequency(words string) map[string]int {
 	return result
 }
 
-func main() {
-	var sentence string
-	fmt.Println("Enter a sentence: ")
-	reader := bufio.NewReader(os.Stdin)
+// func main() {
+// 	var sentence string
+// 	fmt.Println("Enter a sentence: ")
+// 	reader := bufio.NewReader(os.Stdin)
 
-	input, err := reader.ReadString('\n')
-	if err != nil {
-		fmt.Println("There was an error while reading the input!")
-		return
-	}
-	sentence = s.TrimSpace(input)
-	fmt.Println(wordFrequency(sentence))
-}
+// 	input, err := reader.ReadString('\n')
+// 	if err != nil {
+// 		fmt.Println("There was an error while reading the input!")
+// 		return
+// 	}
+// 	sentence = s.TrimSpace(input)
+// 	fmt.Println(wordFrequency(sentence))
+// }

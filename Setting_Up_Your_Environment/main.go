@@ -30,6 +30,8 @@ func main() {
 	// pointers(&number)
 	// fmt.Println(number)
 	// fmt.Println(&number)
+	// structs()
+	// methods()
+	interfaces()
 
-	
 }
